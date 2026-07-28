@@ -1,0 +1,706 @@
+{
+  "schemaVersion": "1.0.0",
+  "engineVersion": "bazi-web-v2.0",
+  "generatedAt": "2026-07-29",
+  "vectors": [
+    {
+      "id": "shanghai_known",
+      "input": {
+        "date": "2005-12-23",
+        "time": "08:37",
+        "timePrecision": "exact",
+        "city": {
+          "name": "Shanghai",
+          "country": "China",
+          "timezone": "Asia/Shanghai",
+          "latitude": 31.2304,
+          "longitude": 121.4737
+        }
+      },
+      "expected": {
+        "timeKnown": true,
+        "timing": {
+          "utc": "2005-12-23T00:37:00.000Z",
+          "timezone": "Asia/Shanghai",
+          "utcOffsetMinutes": 480,
+          "standardOffsetMinutes": 480,
+          "dstObserved": false,
+          "longitudeCorrectionMinutes": 5.89,
+          "equationOfTimeMinutes": 0.09,
+          "trueSolarCorrectionMinutes": 5.98,
+          "trueSolarWall": {
+            "year": 2005,
+            "month": 12,
+            "day": 23,
+            "hour": 8,
+            "minute": 43
+          }
+        },
+        "pillars": [
+          {
+            "label": "Year",
+            "ganZhi": "乙酉"
+          },
+          {
+            "label": "Month",
+            "ganZhi": "戊子"
+          },
+          {
+            "label": "Day",
+            "ganZhi": "辛巳"
+          },
+          {
+            "label": "Hour",
+            "ganZhi": "壬辰"
+          }
+        ],
+        "dayMaster": "辛",
+        "dayMasterElement": "metal",
+        "monthBranch": "子",
+        "elementPercent": {
+          "wood": 12.1,
+          "fire": 5.1,
+          "earth": 15.5,
+          "metal": 24.5,
+          "water": 42.8
+        },
+        "schoolProfile": {
+          "yearBoundary": "li-chun",
+          "monthBoundary": "solar-terms",
+          "dayRollover": "00:00",
+          "useTrueSolarTime": true,
+          "elementWeightModel": "seasonal-v1",
+          "hiddenStemWeightModel": "standard-v1"
+        }
+      },
+      "calculationHash": "a27dcddb2cdf44b325c7c514381fb70b11f9bcc6cdf0670aa9e00180a009e9ab"
+    },
+    {
+      "id": "new_york_summer",
+      "input": {
+        "date": "1994-07-15",
+        "time": "12:00",
+        "timePrecision": "exact",
+        "city": {
+          "name": "New York",
+          "country": "United States",
+          "timezone": "America/New_York",
+          "latitude": 40.7128,
+          "longitude": -74.006
+        }
+      },
+      "expected": {
+        "timeKnown": true,
+        "timing": {
+          "utc": "1994-07-15T16:00:00.000Z",
+          "timezone": "America/New_York",
+          "utcOffsetMinutes": -240,
+          "standardOffsetMinutes": -300,
+          "dstObserved": true,
+          "longitudeCorrectionMinutes": 3.98,
+          "equationOfTimeMinutes": -5.62,
+          "trueSolarCorrectionMinutes": -1.64,
+          "trueSolarWall": {
+            "year": 1994,
+            "month": 7,
+            "day": 15,
+            "hour": 11,
+            "minute": 58
+          }
+        },
+        "pillars": [
+          {
+            "label": "Year",
+            "ganZhi": "甲戌"
+          },
+          {
+            "label": "Month",
+            "ganZhi": "辛未"
+          },
+          {
+            "label": "Day",
+            "ganZhi": "壬寅"
+          },
+          {
+            "label": "Hour",
+            "ganZhi": "丙午"
+          }
+        ],
+        "dayMaster": "壬",
+        "dayMasterElement": "water",
+        "monthBranch": "未",
+        "elementPercent": {
+          "wood": 18.3,
+          "fire": 31.3,
+          "earth": 34.6,
+          "metal": 9.7,
+          "water": 6.1
+        },
+        "schoolProfile": {
+          "yearBoundary": "li-chun",
+          "monthBoundary": "solar-terms",
+          "dayRollover": "00:00",
+          "useTrueSolarTime": true,
+          "elementWeightModel": "seasonal-v1",
+          "hiddenStemWeightModel": "standard-v1"
+        }
+      },
+      "calculationHash": "b4a2be51e471b48c0782fb39936ca9deed4e0a3ddb500ffbe703bf740fcfb219"
+    },
+    {
+      "id": "new_york_winter",
+      "input": {
+        "date": "1994-01-15",
+        "time": "12:00",
+        "timePrecision": "exact",
+        "city": {
+          "name": "New York",
+          "country": "United States",
+          "timezone": "America/New_York",
+          "latitude": 40.7128,
+          "longitude": -74.006
+        }
+      },
+      "expected": {
+        "timeKnown": true,
+        "timing": {
+          "utc": "1994-01-15T17:00:00.000Z",
+          "timezone": "America/New_York",
+          "utcOffsetMinutes": -300,
+          "standardOffsetMinutes": -300,
+          "dstObserved": false,
+          "longitudeCorrectionMinutes": 3.98,
+          "equationOfTimeMinutes": -9.29,
+          "trueSolarCorrectionMinutes": -5.31,
+          "trueSolarWall": {
+            "year": 1994,
+            "month": 1,
+            "day": 15,
+            "hour": 11,
+            "minute": 55
+          }
+        },
+        "pillars": [
+          {
+            "label": "Year",
+            "ganZhi": "癸酉"
+          },
+          {
+            "label": "Month",
+            "ganZhi": "乙丑"
+          },
+          {
+            "label": "Day",
+            "ganZhi": "辛丑"
+          },
+          {
+            "label": "Hour",
+            "ganZhi": "甲午"
+          }
+        ],
+        "dayMaster": "辛",
+        "dayMasterElement": "metal",
+        "monthBranch": "丑",
+        "elementPercent": {
+          "wood": 16.4,
+          "fire": 6.6,
+          "earth": 32,
+          "metal": 27.2,
+          "water": 17.7
+        },
+        "schoolProfile": {
+          "yearBoundary": "li-chun",
+          "monthBoundary": "solar-terms",
+          "dayRollover": "00:00",
+          "useTrueSolarTime": true,
+          "elementWeightModel": "seasonal-v1",
+          "hiddenStemWeightModel": "standard-v1"
+        }
+      },
+      "calculationHash": "bef2f650d8fea3428b5ea0390f9f5084e2731c79686dc9dc4043d570a8356ff8"
+    },
+    {
+      "id": "shenzhen_hour_boundary",
+      "input": {
+        "date": "1994-08-18",
+        "time": "09:10",
+        "timePrecision": "exact",
+        "city": {
+          "name": "Shenzhen",
+          "country": "China",
+          "timezone": "Asia/Shanghai",
+          "latitude": 22.5431,
+          "longitude": 114.0579
+        }
+      },
+      "expected": {
+        "timeKnown": true,
+        "timing": {
+          "utc": "1994-08-18T01:10:00.000Z",
+          "timezone": "Asia/Shanghai",
+          "utcOffsetMinutes": 480,
+          "standardOffsetMinutes": 480,
+          "dstObserved": false,
+          "longitudeCorrectionMinutes": -23.77,
+          "equationOfTimeMinutes": -3.43,
+          "trueSolarCorrectionMinutes": -27.2,
+          "trueSolarWall": {
+            "year": 1994,
+            "month": 8,
+            "day": 18,
+            "hour": 8,
+            "minute": 43
+          }
+        },
+        "pillars": [
+          {
+            "label": "Year",
+            "ganZhi": "甲戌"
+          },
+          {
+            "label": "Month",
+            "ganZhi": "壬申"
+          },
+          {
+            "label": "Day",
+            "ganZhi": "丙子"
+          },
+          {
+            "label": "Hour",
+            "ganZhi": "壬辰"
+          }
+        ],
+        "dayMaster": "丙",
+        "dayMasterElement": "fire",
+        "monthBranch": "申",
+        "elementPercent": {
+          "wood": 8.1,
+          "fire": 8.2,
+          "earth": 22.2,
+          "metal": 20,
+          "water": 41.6
+        },
+        "schoolProfile": {
+          "yearBoundary": "li-chun",
+          "monthBoundary": "solar-terms",
+          "dayRollover": "00:00",
+          "useTrueSolarTime": true,
+          "elementWeightModel": "seasonal-v1",
+          "hiddenStemWeightModel": "standard-v1"
+        }
+      },
+      "calculationHash": "e32767fe561b413523201cf53ff13b10eb00aa6954378b03712d1a3d64ceeeeb"
+    },
+    {
+      "id": "shenzhen_repeat",
+      "input": {
+        "date": "1994-08-18",
+        "time": "09:10",
+        "timePrecision": "exact",
+        "city": {
+          "name": "Shenzhen",
+          "country": "China",
+          "timezone": "Asia/Shanghai",
+          "latitude": 22.5431,
+          "longitude": 114.0579
+        }
+      },
+      "expected": {
+        "timeKnown": true,
+        "timing": {
+          "utc": "1994-08-18T01:10:00.000Z",
+          "timezone": "Asia/Shanghai",
+          "utcOffsetMinutes": 480,
+          "standardOffsetMinutes": 480,
+          "dstObserved": false,
+          "longitudeCorrectionMinutes": -23.77,
+          "equationOfTimeMinutes": -3.43,
+          "trueSolarCorrectionMinutes": -27.2,
+          "trueSolarWall": {
+            "year": 1994,
+            "month": 8,
+            "day": 18,
+            "hour": 8,
+            "minute": 43
+          }
+        },
+        "pillars": [
+          {
+            "label": "Year",
+            "ganZhi": "甲戌"
+          },
+          {
+            "label": "Month",
+            "ganZhi": "壬申"
+          },
+          {
+            "label": "Day",
+            "ganZhi": "丙子"
+          },
+          {
+            "label": "Hour",
+            "ganZhi": "壬辰"
+          }
+        ],
+        "dayMaster": "丙",
+        "dayMasterElement": "fire",
+        "monthBranch": "申",
+        "elementPercent": {
+          "wood": 8.1,
+          "fire": 8.2,
+          "earth": 22.2,
+          "metal": 20,
+          "water": 41.6
+        },
+        "schoolProfile": {
+          "yearBoundary": "li-chun",
+          "monthBoundary": "solar-terms",
+          "dayRollover": "00:00",
+          "useTrueSolarTime": true,
+          "elementWeightModel": "seasonal-v1",
+          "hiddenStemWeightModel": "standard-v1"
+        }
+      },
+      "calculationHash": "e32767fe561b413523201cf53ff13b10eb00aa6954378b03712d1a3d64ceeeeb"
+    },
+    {
+      "id": "london_west",
+      "input": {
+        "date": "1988-02-29",
+        "time": "23:50",
+        "timePrecision": "exact",
+        "city": {
+          "name": "London",
+          "country": "United Kingdom",
+          "timezone": "Europe/London",
+          "latitude": 51.5074,
+          "longitude": -0.1278
+        }
+      },
+      "expected": {
+        "timeKnown": true,
+        "timing": {
+          "utc": "1988-02-29T23:50:00.000Z",
+          "timezone": "Europe/London",
+          "utcOffsetMinutes": 0,
+          "standardOffsetMinutes": 0,
+          "dstObserved": false,
+          "longitudeCorrectionMinutes": -0.51,
+          "equationOfTimeMinutes": -13.05,
+          "trueSolarCorrectionMinutes": -13.56,
+          "trueSolarWall": {
+            "year": 1988,
+            "month": 2,
+            "day": 29,
+            "hour": 23,
+            "minute": 36
+          }
+        },
+        "pillars": [
+          {
+            "label": "Year",
+            "ganZhi": "戊辰"
+          },
+          {
+            "label": "Month",
+            "ganZhi": "甲寅"
+          },
+          {
+            "label": "Day",
+            "ganZhi": "甲寅"
+          },
+          {
+            "label": "Hour",
+            "ganZhi": "丙子"
+          }
+        ],
+        "dayMaster": "甲",
+        "dayMasterElement": "wood",
+        "monthBranch": "寅",
+        "elementPercent": {
+          "wood": 56.8,
+          "fire": 13.2,
+          "earth": 17.5,
+          "metal": 0,
+          "water": 12.4
+        },
+        "schoolProfile": {
+          "yearBoundary": "li-chun",
+          "monthBoundary": "solar-terms",
+          "dayRollover": "00:00",
+          "useTrueSolarTime": true,
+          "elementWeightModel": "seasonal-v1",
+          "hiddenStemWeightModel": "standard-v1"
+        }
+      },
+      "calculationHash": "e7e1c48681ab5aaa23b88eac073c0833d34b7431493bd0903b78d1a05c5f0b74"
+    },
+    {
+      "id": "shanghai_unknown_time",
+      "input": {
+        "date": "2005-12-23",
+        "time": null,
+        "timePrecision": "unknown",
+        "city": {
+          "name": "Shanghai",
+          "country": "China",
+          "timezone": "Asia/Shanghai",
+          "latitude": 31.2304,
+          "longitude": 121.4737
+        }
+      },
+      "expected": {
+        "timeKnown": false,
+        "timing": {
+          "utc": "2005-12-23T04:00:00.000Z",
+          "timezone": "Asia/Shanghai",
+          "utcOffsetMinutes": 480,
+          "standardOffsetMinutes": 480,
+          "dstObserved": false,
+          "longitudeCorrectionMinutes": 5.89,
+          "equationOfTimeMinutes": 0.09,
+          "trueSolarCorrectionMinutes": 5.98,
+          "trueSolarWall": {
+            "year": 2005,
+            "month": 12,
+            "day": 23,
+            "hour": 12,
+            "minute": 6
+          }
+        },
+        "pillars": [
+          {
+            "label": "Year",
+            "ganZhi": "乙酉"
+          },
+          {
+            "label": "Month",
+            "ganZhi": "戊子"
+          },
+          {
+            "label": "Day",
+            "ganZhi": "辛巳"
+          },
+          {
+            "label": "Hour",
+            "unknown": true
+          }
+        ],
+        "dayMaster": "辛",
+        "dayMasterElement": "metal",
+        "monthBranch": "子",
+        "elementPercent": {
+          "wood": 14.2,
+          "fire": 7.1,
+          "earth": 11.8,
+          "metal": 34.4,
+          "water": 32.4
+        },
+        "schoolProfile": {
+          "yearBoundary": "li-chun",
+          "monthBoundary": "solar-terms",
+          "dayRollover": "00:00",
+          "useTrueSolarTime": true,
+          "elementWeightModel": "seasonal-v1",
+          "hiddenStemWeightModel": "standard-v1"
+        }
+      },
+      "calculationHash": "ad76c7828ac2e44c4b03ce9139bdd7d2ccb15c5ecc2b8758c23d5322e3b7619e"
+    },
+    {
+      "id": "kashgar_date_boundary",
+      "input": {
+        "date": "1994-01-15",
+        "time": "00:20",
+        "timePrecision": "exact",
+        "city": {
+          "name": "Kashgar",
+          "country": "China",
+          "timezone": "Asia/Shanghai",
+          "latitude": 39.4704,
+          "longitude": 75.9898
+        }
+      },
+      "expected": {
+        "timeKnown": true,
+        "timing": {
+          "utc": "1994-01-14T16:20:00.000Z",
+          "timezone": "Asia/Shanghai",
+          "utcOffsetMinutes": 480,
+          "standardOffsetMinutes": 480,
+          "dstObserved": false,
+          "longitudeCorrectionMinutes": -176.04,
+          "equationOfTimeMinutes": -8.93,
+          "trueSolarCorrectionMinutes": -184.97,
+          "trueSolarWall": {
+            "year": 1994,
+            "month": 1,
+            "day": 14,
+            "hour": 21,
+            "minute": 15
+          }
+        },
+        "pillars": [
+          {
+            "label": "Year",
+            "ganZhi": "癸酉"
+          },
+          {
+            "label": "Month",
+            "ganZhi": "乙丑"
+          },
+          {
+            "label": "Day",
+            "ganZhi": "庚子"
+          },
+          {
+            "label": "Hour",
+            "ganZhi": "丁亥"
+          }
+        ],
+        "dayMaster": "庚",
+        "dayMasterElement": "metal",
+        "monthBranch": "丑",
+        "elementPercent": {
+          "wood": 9.8,
+          "fire": 6,
+          "earth": 14,
+          "metal": 25.4,
+          "water": 44.7
+        },
+        "schoolProfile": {
+          "yearBoundary": "li-chun",
+          "monthBoundary": "solar-terms",
+          "dayRollover": "00:00",
+          "useTrueSolarTime": true,
+          "elementWeightModel": "seasonal-v1",
+          "hiddenStemWeightModel": "standard-v1"
+        }
+      },
+      "calculationHash": "f83b57b3f4f4a425307c4e54b82af6cd25148f6a3456493786d4750d295118b9"
+    },
+    {
+      "id": "sydney_summer",
+      "input": {
+        "date": "2000-01-02",
+        "time": "06:15",
+        "timePrecision": "exact",
+        "city": {
+          "name": "Sydney",
+          "country": "Australia",
+          "timezone": "Australia/Sydney",
+          "latitude": -33.8688,
+          "longitude": 151.2093
+        }
+      },
+      "expected": {
+        "timeKnown": true,
+        "timing": {
+          "utc": "2000-01-01T19:15:00.000Z",
+          "timezone": "Australia/Sydney",
+          "utcOffsetMinutes": 660,
+          "standardOffsetMinutes": 600,
+          "dstObserved": true,
+          "longitudeCorrectionMinutes": 4.84,
+          "equationOfTimeMinutes": -3.61,
+          "trueSolarCorrectionMinutes": 1.23,
+          "trueSolarWall": {
+            "year": 2000,
+            "month": 1,
+            "day": 2,
+            "hour": 6,
+            "minute": 16
+          }
+        },
+        "pillars": [
+          {
+            "label": "Year",
+            "ganZhi": "己卯"
+          },
+          {
+            "label": "Month",
+            "ganZhi": "丙子"
+          },
+          {
+            "label": "Day",
+            "ganZhi": "己未"
+          },
+          {
+            "label": "Hour",
+            "ganZhi": "丁卯"
+          }
+        ],
+        "dayMaster": "己",
+        "dayMasterElement": "earth",
+        "monthBranch": "子",
+        "elementPercent": {
+          "wood": 33.2,
+          "fire": 13.4,
+          "earth": 25.7,
+          "metal": 0,
+          "water": 27.8
+        },
+        "schoolProfile": {
+          "yearBoundary": "li-chun",
+          "monthBoundary": "solar-terms",
+          "dayRollover": "00:00",
+          "useTrueSolarTime": true,
+          "elementWeightModel": "seasonal-v1",
+          "hiddenStemWeightModel": "standard-v1"
+        }
+      },
+      "calculationHash": "434285ced0c68287eb4ee00d9bef2374706cbafa60070cf1e9dec3bc1439553e"
+    }
+  ],
+  "negativeVectors": [
+    {
+      "id": "missing_timezone",
+      "input": {
+        "date": "2000-01-01",
+        "time": "12:00",
+        "timePrecision": "exact",
+        "city": {
+          "name": "Missing zone",
+          "country": "Test",
+          "latitude": 0,
+          "longitude": 0
+        }
+      },
+      "expectedErrorCode": "INVALID_TIMEZONE",
+      "expectedErrorMessage": "A timezone is required."
+    },
+    {
+      "id": "invalid_date",
+      "input": {
+        "date": "not-a-date",
+        "time": "12:00",
+        "timePrecision": "exact",
+        "city": {
+          "name": "Invalid date",
+          "country": "Test",
+          "timezone": "UTC",
+          "latitude": 0,
+          "longitude": 0
+        }
+      },
+      "expectedErrorCode": "INVALID_DATE",
+      "expectedErrorMessage": "A valid date is required."
+    },
+    {
+      "id": "missing_longitude",
+      "input": {
+        "date": "2000-01-01",
+        "time": "12:00",
+        "timePrecision": "exact",
+        "city": {
+          "name": "Missing longitude",
+          "country": "Test",
+          "timezone": "UTC",
+          "latitude": 0
+        }
+      },
+      "expectedErrorCode": "INVALID_LONGITUDE",
+      "expectedErrorMessage": "A valid longitude is required."
+    }
+  ]
+}
