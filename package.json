@@ -1,0 +1,10 @@
+{
+  "name": "baziclarity-calculation-evidence",
+  "version": "1.0.0",
+  "private": false,
+  "description": "Public, fictional calculation test vectors for Bazi Clarity",
+  "type": "module",
+  "scripts": {
+    "verify": "node scripts/verify-evidence.mjs"
+  }
+}
