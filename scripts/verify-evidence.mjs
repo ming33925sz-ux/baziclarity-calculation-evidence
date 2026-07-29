@@ -58,4 +58,32 @@ assert.deepEqual(
   new Set(["INVALID_TIMEZONE", "INVALID_DATE", "INVALID_LONGITUDE"]),
 );
 
-console.log(`evidence verification passed: ${manifest.fixtureCount} vectors`);
+const compatibility = JSON.parse(
+  fs.readFileSync("evidence/compatibility-vector.json", "utf8"),
+);
+assert.equal(manifest.compatibilityFixtureCount, 1);
+assert.equal(
+  sha256(compatibility),
+  manifest.compatibilityVectorSha256,
+);
+assert.equal(
+  compatibility.sourceSha256.compatibilityCore,
+  manifest.compatibilityCoreSha256,
+);
+
+const { evidenceHash, ...compatibilityPayload } = compatibility;
+assert.equal(sha256(compatibilityPayload), evidenceHash);
+assert.equal(compatibility.expected.rightChart.timeKnown, false);
+assert.deepEqual(
+  compatibility.expected.rightChart.pillars[3],
+  { label: "Hour", unknown: true },
+);
+assert.equal("score" in compatibility.expected.comparison, false);
+assert.doesNotMatch(
+  JSON.stringify(compatibility),
+  /% compatible|soulmate|perfect match|guaranteed marriage|customer result/i,
+);
+
+console.log(
+  `evidence verification passed: ${manifest.fixtureCount} natal vectors + ${manifest.compatibilityFixtureCount} compatibility vector`,
+);
