@@ -2,5 +2,8 @@
   "packageVersion": "1.0.0",
   "engineVersion": "bazi-web-v2.0",
   "fixtureCount": 12,
-  "vectorsSha256": "9715df4aa3aec50954d3d33cbf529bb567cd6bf81e764c3ce156e20a32f8950c"
+  "vectorsSha256": "9715df4aa3aec50954d3d33cbf529bb567cd6bf81e764c3ce156e20a32f8950c",
+  "compatibilityFixtureCount": 1,
+  "compatibilityVectorSha256": "066e646f9197fa68b2c0016324050eafd0ca7c80bfc138bf3f8d8e8f1f694f8d",
+  "compatibilityCoreSha256": "6e39a4687479db4b56debfd8d8e0fdd78e774c900b7bc935c99fd9ab7beca524"
 }
