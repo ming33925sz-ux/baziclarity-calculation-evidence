@@ -1,0 +1,252 @@
+{
+  "schemaVersion": "1.0.0",
+  "engineVersion": "bazi-web-v2.0",
+  "comparisonModelVersion": "compatibility-core-v1.0",
+  "fixtureId": "fictional-shanghai-new-york-mixed-time",
+  "disclosure": "Fictional software test vector—not a customer case.",
+  "sourceSha256": {
+    "calendar": "2d28f5f1ea1cd49f4f6ff1d48235e5c9102b2a901fe4533613a105048186e152",
+    "natalEngine": "c2587e81bbcc32dee38baf8ddb581e64dacf22ad6b7bb47bf8a86da68856d46f",
+    "compatibilityCore": "6e39a4687479db4b56debfd8d8e0fdd78e774c900b7bc935c99fd9ab7beca524"
+  },
+  "fixture": {
+    "left": {
+      "date": "1994-08-18",
+      "time": "09:30",
+      "timePrecision": "exact",
+      "city": {
+        "name": "Shanghai",
+        "country": "China",
+        "timezone": "Asia/Shanghai",
+        "latitude": 31.2304,
+        "longitude": 121.4737
+      }
+    },
+    "right": {
+      "date": "1992-06-20",
+      "time": null,
+      "timePrecision": "unknown",
+      "city": {
+        "name": "New York",
+        "country": "United States",
+        "timezone": "America/New_York",
+        "latitude": 40.7128,
+        "longitude": -74.006
+      }
+    }
+  },
+  "expected": {
+    "leftChart": {
+      "timeKnown": true,
+      "timing": {
+        "timezone": "Asia/Shanghai",
+        "utcOffsetMinutes": 480,
+        "standardOffsetMinutes": 480,
+        "dstObserved": false,
+        "longitudeCorrectionMinutes": 5.89,
+        "equationOfTimeMinutes": -3.43,
+        "trueSolarCorrectionMinutes": 2.46
+      },
+      "pillars": [
+        {
+          "label": "Year",
+          "ganZhi": "甲戌",
+          "stem": "甲",
+          "branch": "戌"
+        },
+        {
+          "label": "Month",
+          "ganZhi": "壬申",
+          "stem": "壬",
+          "branch": "申"
+        },
+        {
+          "label": "Day",
+          "ganZhi": "丙子",
+          "stem": "丙",
+          "branch": "子"
+        },
+        {
+          "label": "Hour",
+          "ganZhi": "癸巳",
+          "stem": "癸",
+          "branch": "巳"
+        }
+      ],
+      "dayMaster": "丙",
+      "dayMasterElement": "fire",
+      "elements": {
+        "percent": {
+          "wood": 7,
+          "fire": 15.8,
+          "earth": 13.9,
+          "metal": 22.3,
+          "water": 41.1
+        },
+        "strongest": "water",
+        "weakest": "wood"
+      }
+    },
+    "rightChart": {
+      "timeKnown": false,
+      "timing": {
+        "timezone": "America/New_York",
+        "utcOffsetMinutes": -240,
+        "standardOffsetMinutes": -300,
+        "dstObserved": true,
+        "longitudeCorrectionMinutes": 3.98,
+        "equationOfTimeMinutes": -1.5,
+        "trueSolarCorrectionMinutes": 2.48
+      },
+      "pillars": [
+        {
+          "label": "Year",
+          "ganZhi": "壬申",
+          "stem": "壬",
+          "branch": "申"
+        },
+        {
+          "label": "Month",
+          "ganZhi": "丙午",
+          "stem": "丙",
+          "branch": "午"
+        },
+        {
+          "label": "Day",
+          "ganZhi": "丁卯",
+          "stem": "丁",
+          "branch": "卯"
+        },
+        {
+          "label": "Hour",
+          "unknown": true
+        }
+      ],
+      "dayMaster": "丁",
+      "dayMasterElement": "fire",
+      "elements": {
+        "percent": {
+          "wood": 14.5,
+          "fire": 64.6,
+          "earth": 4.8,
+          "metal": 8,
+          "water": 8.1
+        },
+        "strongest": "fire",
+        "weakest": "earth"
+      }
+    },
+    "comparison": {
+      "dayMaster": {
+        "left": {
+          "stem": "丙",
+          "element": "fire"
+        },
+        "right": {
+          "stem": "丁",
+          "element": "fire"
+        },
+        "kind": "shared",
+        "summary": "Both Day Masters share an element. Priorities may feel familiar while similar blind spots can be amplified."
+      },
+      "elements": {
+        "left": {
+          "raw": {
+            "wood": 1,
+            "fire": 2.1125,
+            "earth": 1.3,
+            "metal": 1.3,
+            "water": 3.4875
+          },
+          "seasonalWeights": {
+            "wood": 0.65,
+            "fire": 0.7,
+            "earth": 1,
+            "metal": 1.6,
+            "water": 1.1
+          },
+          "percent": {
+            "wood": 7,
+            "fire": 15.8,
+            "earth": 13.9,
+            "metal": 22.3,
+            "water": 41.1
+          },
+          "strongest": "water",
+          "weakest": "wood"
+        },
+        "right": {
+          "raw": {
+            "wood": 1.3,
+            "fire": 3.075,
+            "earth": 0.33749999999999997,
+            "metal": 1,
+            "water": 1.1875
+          },
+          "seasonalWeights": {
+            "wood": 0.9,
+            "fire": 1.7,
+            "earth": 1.15,
+            "metal": 0.65,
+            "water": 0.55
+          },
+          "percent": {
+            "wood": 14.5,
+            "fire": 64.6,
+            "earth": 4.8,
+            "metal": 8,
+            "water": 8.1
+          },
+          "strongest": "fire",
+          "weakest": "earth"
+        }
+      },
+      "branchInteractions": [
+        {
+          "type": "combine",
+          "left": {
+            "label": "Year",
+            "branch": "戌"
+          },
+          "right": {
+            "label": "Day",
+            "branch": "卯"
+          }
+        },
+        {
+          "type": "clash",
+          "left": {
+            "label": "Day",
+            "branch": "子"
+          },
+          "right": {
+            "label": "Month",
+            "branch": "午"
+          }
+        },
+        {
+          "type": "combine",
+          "left": {
+            "label": "Hour",
+            "branch": "巳"
+          },
+          "right": {
+            "label": "Year",
+            "branch": "申"
+          }
+        }
+      ],
+      "confidence": {
+        "leftTimeKnown": true,
+        "rightTimeKnown": false,
+        "notice": "At least one Hour Pillar is unknown; conclusions use only the provided data."
+      },
+      "prompts": [
+        "Where does support feel mutual, and where does it become expectation?",
+        "Which difference needs a boundary rather than persuasion?",
+        "What repair action can both people repeat after tension?"
+      ]
+    }
+  },
+  "evidenceHash": "4327675c19e253175bfdf0b3d57dc566f167cdfae6d0f49854e6580daf33ca1d"
+}
