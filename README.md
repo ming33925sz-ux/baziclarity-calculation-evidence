@@ -27,6 +27,7 @@ The verifier checks the package hash, every calculation snapshot hash, the round
 
 ## Calculation guides
 
+- [Unknown birth time: a testable Three Pillars boundary](UNKNOWN_BIRTH_TIME_BOUNDARY.md) — why the Hour Pillar remains unknown, why a city cannot recover the hour, and how the fictional boundary vector is verified.
 - [Why birth city changes a BaZi chart](BIRTH_CITY_CALCULATION.md) — a calculation note on historical time zones, daylight-saving rules, longitude, true solar time, solar-term boundaries, and unknown birth time.
 
 ## Use the public tools
