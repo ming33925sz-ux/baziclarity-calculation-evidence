@@ -25,10 +25,20 @@ npm run verify
 
 The verifier checks the package hash, every calculation snapshot hash, the rounded Five Element totals, the unknown-hour boundary, and the three negative-input records.
 
+## Use the public tools
+
+The free interfaces are not customer examples. They do not validate predictive claims.
+
+- [Build a free chart preview](https://baziclarity.com/free-reading?utm_source=github&utm_medium=repository&utm_campaign=calculation_evidence) — birth time is optional; when it is not supplied, the interface keeps the Hour Pillar unknown and uses a Three Pillars boundary.
+- [Compare two charts](https://baziclarity.com/compatibility?utm_source=github&utm_medium=repository&utm_campaign=calculation_evidence) — a limited compatibility view for relationship, marriage, communication or partnership questions.
+- [Learn the core BaZi terms](https://baziclarity.com/en/learn/?utm_source=github&utm_medium=repository&utm_campaign=calculation_evidence) — direct routes to Four Pillars, Day Master, Five Elements, Ten Gods, Officer and Seven Killings, luck cycles and practical topics.
+
+No sign-in or email is required for the free chart preview. Birth time is optional in the free chart interface; leaving it blank does not create an Hour Pillar.
+
 ## Related public pages
 
-- [Calculation methodology](https://baziclarity.com/methodology)
-- [Case and review policy](https://baziclarity.com/case-study-policy)
-- [Complete fictional report demonstration](https://baziclarity.com/sample-report)
+- [Calculation methodology](https://baziclarity.com/methodology?utm_source=github&utm_medium=repository&utm_campaign=calculation_evidence)
+- [Case and review policy](https://baziclarity.com/case-study-policy?utm_source=github&utm_medium=repository&utm_campaign=calculation_evidence)
+- [Complete fictional report demonstration](https://baziclarity.com/sample-report?utm_source=github&utm_medium=repository&utm_campaign=calculation_evidence)
 
 The demonstration report is not a real customer case. No customer review or practitioner credential is included in this package.
