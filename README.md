@@ -15,7 +15,8 @@ All birth inputs in this package are fictional test vectors. They do not represe
 - Three Pillars when birth time is unknown;
 - Four Pillars when birth time is supplied;
 - deterministic repetition for the same input and engine version;
-- fail-closed behavior for malformed date, time-zone, and coordinate input.
+- fail-closed behavior for malformed date, time-zone, and coordinate input;
+- a limited two-chart comparison that uses Day Masters, Five Element context, and known branch interactions without inventing a score.
 
 ## Verify the evidence package
 
@@ -23,11 +24,12 @@ All birth inputs in this package are fictional test vectors. They do not represe
 npm run verify
 ```
 
-The verifier checks the package hash, every calculation snapshot hash, the rounded Five Element totals, the unknown-hour boundary, and the three negative-input records.
+The verifier checks the package hashes, every calculation snapshot hash, the rounded Five Element totals, the unknown-hour boundary, the three negative-input records, and the compatibility comparison boundary.
 
 ## Calculation guides
 
-- [Unknown birth time: a testable Three Pillars boundary](UNKNOWN_BIRTH_TIME_BOUNDARY.md) — why the Hour Pillar remains unknown, why a city cannot recover the hour, and how the fictional boundary vector is verified.
+- [Unknown birth time boundary](UNKNOWN_BIRTH_TIME_BOUNDARY.md) — why the Hour Pillar remains unknown, why a city cannot recover the hour, and how the fictional boundary vector is verified.
+- [Compatibility calculation boundary](COMPATIBILITY_CALCULATION.md) — how two charts are calculated independently and compared without names, an invented Hour Pillar, a percentage score, or a relationship verdict.
 - [Why birth city changes a BaZi chart](BIRTH_CITY_CALCULATION.md) — a calculation note on historical time zones, daylight-saving rules, longitude, true solar time, solar-term boundaries, and unknown birth time.
 
 ## Use the public tools
@@ -35,10 +37,10 @@ The verifier checks the package hash, every calculation snapshot hash, the round
 The free interfaces are not customer examples. They do not validate predictive claims.
 
 - [Build a free chart preview](https://baziclarity.com/free-reading?utm_source=github&utm_medium=repository&utm_campaign=calculation_evidence) — birth time is optional; when it is not supplied, the interface keeps the Hour Pillar unknown and uses a Three Pillars boundary.
-- [Compare two charts](https://baziclarity.com/compatibility?utm_source=github&utm_medium=repository&utm_campaign=calculation_evidence) — a limited compatibility view for relationship, marriage, communication or partnership questions.
-- [Learn the core BaZi terms](https://baziclarity.com/en/learn/?utm_source=github&utm_medium=repository&utm_campaign=calculation_evidence) — direct routes to Four Pillars, Day Master, Five Elements, Ten Gods, Officer and Seven Killings, luck cycles and practical topics.
+- [Compare two charts](https://baziclarity.com/compatibility?utm_source=github&utm_medium=repository&utm_campaign=compatibility_evidence) — a limited compatibility view for relationship, marriage, communication, or partnership questions.
+- [Learn the core BaZi terms](https://baziclarity.com/en/learn/?utm_source=github&utm_medium=repository&utm_campaign=calculation_evidence) — direct routes to Four Pillars, Day Master, Five Elements, Ten Gods, Officer and Seven Killings, luck cycles, and practical topics.
 
-No sign-in or email is required for the free chart preview. Birth time is optional in the free chart interface; leaving it blank does not create an Hour Pillar.
+No sign-in or email is required for the free chart preview or the two-chart comparison. Birth time is optional; leaving it blank does not create an Hour Pillar.
 
 ## Related public pages
 
