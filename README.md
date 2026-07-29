@@ -25,6 +25,10 @@ npm run verify
 
 The verifier checks the package hash, every calculation snapshot hash, the rounded Five Element totals, the unknown-hour boundary, and the three negative-input records.
 
+## Calculation guides
+
+- [Why birth city changes a BaZi chart](BIRTH_CITY_CALCULATION.md) — a calculation note on historical time zones, daylight-saving rules, longitude, true solar time, solar-term boundaries, and unknown birth time.
+
 ## Use the public tools
 
 The free interfaces are not customer examples. They do not validate predictive claims.
